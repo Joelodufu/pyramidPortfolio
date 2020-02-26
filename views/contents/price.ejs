@@ -1,0 +1,154 @@
+<div class="container" id="plans">
+    <section class="price">
+        <div class="page-section page-section--small text-center">
+            <h2 class="page-section__title">OUR PLANS</h2>
+            <p class="page-section__paragraph">Lets Provide You The Best Service at The Lowest Price. </p>
+            <div class="price__panel-wrapper">
+                <div class="row gutters-40">
+                    <div class="col-md-3 good">
+                        <div class="panel text-center">
+                            <div class="panel-heading">
+                                <h4 class="price__title">BLOG</h4>
+                                <h1 class="price__ammount">&#36;<span class="price__ammount--number">50</span> </h1>
+                            </div>
+                            <div class="panel-body">
+                                <p>Blog Creation</p>
+                                <p>2-Years maintainance & support</p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <hr>
+
+                            </div>
+                            <div>
+                                <a class="panel__button" href="#contacts" data-toggle="modal" data-target="#orangeModalSubscription">GET THIS PLAN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel text-center">
+                            <div class="panel-heading">
+                                <h4 class="price__title">WEBSITE (PORTFOLIO / E-COMMERCE)</h4>
+                                <h1 class="price__ammount">&#36; <span class="price__ammount--number">200/350</span> </h1>
+                            </div>
+                            <div class="panel-body">
+                                <p>Design & Development</p>
+                                <p>2-Years maintainance & support</p>
+                                <p>Domain Name</p>
+                                <p>Hosting</p>
+                                <p>SEO</p>
+                            </div>
+                            <div>
+                                <a class="panel__button" href="#contacts" data-toggle="modal" data-target="#orangeModalSubscription">GET THIS PLAN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel text-center">
+                            <div class="panel-heading">
+                                <h4 class="price__title">Business Branding</h4>
+                                <h1 class="price__ammount">&#36; <span class="price__ammount--number">100</span></h1>
+                            </div>
+                            <div class="panel-body">
+                                <p>Name / Color Selection</p>
+                                <p>Logo Design</p>
+                                <p>Graphics and Flyers</p>
+                                <p>Letter head designs</p>
+                                <p></p>
+                            </div>
+                            <div>
+                                <a class="panel__button" href="#contacts" data-toggle="modal" data-target="#orangeModalSubscription">GET THIS PLAN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel text-center">
+                            <div class="panel-heading">
+                                <h4 class="price__title">DATABASED MANAGEMENT SYSTEM</h4>
+                                <h1 class="price__ammount">&#36; <span class="price__ammount--number">200</span></h1>
+                            </div>
+                            <div class="panel-body">
+                                <p>2-Years maintainance & support</p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <hr>
+                            </div>
+                            <div>
+                                <a class="panel__button" href="#contacts" data-toggle="modal" data-target="#orangeModalSubscription">GET THIS PLAN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</div>
+
+<div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-warning" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header text-center">
+                <h4 class="modal-title white-text w-100 font-weight-bold py-2">Place Order</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body">
+                <form action="/email" method="POST">
+                    <div class="md-form mb-5">
+                        <label data-error="wrong" data-success="right" for="form3">Your name</label>
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="text" name="username" class="form-control validate" required>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <label data-error="wrong" data-success="right" for="form2">Your email</label>
+                        <input type="email" name="email" class="form-control validate" required>
+
+                    </div>
+
+                    <div class="md-form">
+                        <label data-error="wrong" data-success="right" for="form2">Your Mobile Number</label>
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="phone" name="phone" class="form-control validate" required>
+
+                    </div>
+
+                    <div class="md-form">
+                        <label data-error="wrong" data-success="right" for="form2">Select Plan</label>
+                        <select class="form-control validate" id="plans" data-style="btn-info" name="plans">
+                            <optgroup label="Select Plan">
+                              <option name="table1" value="Blog">BLOG</option>
+                              <option name="table2" value="Portfolio">PORTFOLIO</option>
+                              <option name="table3" value="E-comerce">E-COMMERCE</option>
+                              <option name="table3" value="Branding">Business Branding</option>
+                              <option name="table3" value="Database">DATABASE MANAGEMENT</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+
+                    <div class="modal-footer justify-content-center">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="submit" id="submit" class="form-control validate">
+                    </div>
+
+                </form>
+            </div>
+
+            <!--Footer-->
+
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+</section>
+</div>

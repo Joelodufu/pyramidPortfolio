@@ -1,0 +1,76 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  color: aliceblue;
+  background-color: #171a1d;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: rgb(0, 24, 41);
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
+}
+
+.text-left{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+  border: 1px solid #f2f2f2;
+  padding: 15px;
+  transition: box-shadow 0.5s;
+}
+
+img.nav{
+  margin-bottom: 0;
+  border-radius: 0;
+  max-height: 50px;
+  padding-bottom: 20px;
+float: left;}
+
+
+/*
+STYLE THE LEFT SIDE NAVEBAR
+*/
+
+
+ a.sell {
+  border-radius: 10PX;
+  display: block;
+  color: rgb(255, 255, 255);
+  background-color: rgb(78, 78, 78);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+.product{
+  background-color: darkblue;
+}
